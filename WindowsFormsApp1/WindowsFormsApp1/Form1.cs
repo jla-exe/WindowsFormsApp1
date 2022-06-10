@@ -112,6 +112,7 @@ namespace WindowsFormsApp1
             calculatorDisplay.Text = "0";
         }
 
+        //Function of equal button
         private void equalButton_Click(object sender, EventArgs e)
         {
             second = userInput;
@@ -203,7 +204,7 @@ namespace WindowsFormsApp1
             userInput = "";
         }
 
-
+        //Division
         private void divisionButton_Click(object sender, EventArgs e)
         {
             function = '/';
@@ -217,7 +218,8 @@ namespace WindowsFormsApp1
             }
             userInput = "";
         }
-
+        
+        //Addition
         private void additionButton_Click(object sender, EventArgs e)
         {
             function = '+';
@@ -232,6 +234,7 @@ namespace WindowsFormsApp1
             userInput = "";
         }
 
+        //Subtraction
         private void subtractionButton_Click(object sender, EventArgs e)
         {
             function = '-';
@@ -259,6 +262,7 @@ namespace WindowsFormsApp1
             }
         }
 
+        //Squared
         private void sqButton_Click(object sender, EventArgs e)
         {
             if (userInput == "")
@@ -271,6 +275,7 @@ namespace WindowsFormsApp1
             }
         }
 
+        //Sin
         private void sinButton_Click(object sender, EventArgs e)
         {
             if (userInput == "")
@@ -283,6 +288,7 @@ namespace WindowsFormsApp1
             }
         }
 
+        //Cos
         private void cosButton_Click(object sender, EventArgs e)
         {
             if (userInput == "")
@@ -295,6 +301,7 @@ namespace WindowsFormsApp1
             }
         }
 
+        //Tan
         private void tanButton_Click(object sender, EventArgs e)
         {
             if (userInput == "")
@@ -307,6 +314,7 @@ namespace WindowsFormsApp1
             }
         }
 
+        //Asin
         private void aSinButton_Click(object sender, EventArgs e)
         {
             if (userInput == "")
@@ -315,10 +323,11 @@ namespace WindowsFormsApp1
             }
             else
             {
-                userInput = Math.Acos(Convert.ToDouble(userInput)).ToString();
+                userInput = Math.Asin(Convert.ToDouble(userInput)).ToString();
             }
         }
 
+        //Acos
         private void aCosButton_Click(object sender, EventArgs e)
         {
             if (userInput == "")
@@ -331,6 +340,7 @@ namespace WindowsFormsApp1
             }
         }
 
+        //Atan
         private void aTanButton_Click(object sender, EventArgs e)
         {
             if (userInput == "")
@@ -343,7 +353,7 @@ namespace WindowsFormsApp1
             }
         }
 
-
+        //Plus/minus button
         private void plusMinusButton_Click(object sender, EventArgs e)
         {
             if (userInput == "")
@@ -352,6 +362,7 @@ namespace WindowsFormsApp1
             }
             else
             {
+                //Convert current userInput to its inverse and update the display
                 userInput = (Convert.ToDouble(userInput) * -1).ToString();
                 calculatorDisplay.Text = userInput;
             }
