@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.calculatorDisplay = new System.Windows.Forms.Label();
             this.sixButton = new System.Windows.Forms.Button();
             this.fiveButton = new System.Windows.Forms.Button();
@@ -217,14 +218,16 @@
             // clearButton
             // 
             this.clearButton.AutoSize = true;
+            this.clearButton.BackColor = System.Drawing.SystemColors.Control;
             this.clearButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.clearButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clearButton.ForeColor = System.Drawing.SystemColors.Control;
             this.clearButton.Location = new System.Drawing.Point(4, 82);
             this.clearButton.Name = "clearButton";
             this.clearButton.Size = new System.Drawing.Size(238, 58);
             this.clearButton.TabIndex = 16;
             this.clearButton.Text = "AC";
-            this.clearButton.UseVisualStyleBackColor = true;
+            this.clearButton.UseVisualStyleBackColor = false;
             this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
             // 
             // subtractionButton
@@ -412,6 +415,7 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Unispace", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(404, 322);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(78, 58);
@@ -423,6 +427,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(486, 384);
             this.Controls.Add(this.label1);
@@ -453,6 +458,8 @@
             this.Controls.Add(this.eightButton);
             this.Controls.Add(this.calculatorDisplay);
             this.Controls.Add(this.sevenButton);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
