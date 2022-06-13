@@ -24,82 +24,71 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        //When button is clicked, set screen to nothing, add number to userInput, add userInput to display
+        //When button is clicked, add number to userInput, set userInput to display
         private void zeroButton_Click(object sender, EventArgs e)
         {
-            calculatorDisplay.Text = "";
             userInput += "0";
-            calculatorDisplay.Text += userInput;
+            calculatorDisplay.Text = userInput;
         }
 
         private void oneButton_Click(object sender, EventArgs e)
         {
-            calculatorDisplay.Text = "";
             userInput += "1";
-            calculatorDisplay.Text += userInput;
+            calculatorDisplay.Text = userInput;
         }
 
         private void twoButton_Click(object sender, EventArgs e)
         {
-            calculatorDisplay.Text = "";
             userInput += "2";
-            calculatorDisplay.Text += userInput;
+            calculatorDisplay.Text = userInput;
         }
 
         private void threeButton_Click(object sender, EventArgs e)
         {
-            calculatorDisplay.Text = "";
             userInput += "3";
-            calculatorDisplay.Text += userInput;
+            calculatorDisplay.Text = userInput;
         }
 
         private void fourButton_Click(object sender, EventArgs e)
         {
-            calculatorDisplay.Text = "";
             userInput += "4";
-            calculatorDisplay.Text += userInput;
+            calculatorDisplay.Text = userInput;
         }
 
         private void fiveButton_Click(object sender, EventArgs e)
         {
-            calculatorDisplay.Text = "";
             userInput += "5";
-            calculatorDisplay.Text += userInput;
+            calculatorDisplay.Text = userInput;
         }
 
         private void sixButton_Click(object sender, EventArgs e)
         {
-            calculatorDisplay.Text = "";
             userInput += "6";
-            calculatorDisplay.Text += userInput;
+            calculatorDisplay.Text = userInput;
         }
 
         private void sevenButton_Click(object sender, EventArgs e)
         {
-            calculatorDisplay.Text = "";
             userInput += "7";
-            calculatorDisplay.Text += userInput;
+            calculatorDisplay.Text = userInput;
         }
 
         private void eightButton_Click(object sender, EventArgs e)
         {
-            calculatorDisplay.Text = "";
             userInput += "8";
-            calculatorDisplay.Text += userInput;
+            calculatorDisplay.Text = userInput;
         }
 
         private void nineButton_Click(object sender, EventArgs e)
         {
-            calculatorDisplay.Text = "";
             userInput += "9";
-            calculatorDisplay.Text += userInput;
+            calculatorDisplay.Text = userInput;
         }
 
         private void decimalButton_Click(object sender, EventArgs e)
         {
-            calculatorDisplay.Text = "";
             userInput += ".";
-            calculatorDisplay.Text += userInput;
+            calculatorDisplay.Text = userInput;
         }
         
         //Clear all variables
